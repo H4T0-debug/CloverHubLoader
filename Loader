@@ -1,7 +1,6 @@
 local TargetPlaceId = 107778070777162
 
 if game.PlaceId == TargetPlaceId then
-    loadstring(game:HttpGet("https://pastebin.com/raw/WFudj4Br"))()
     loadstring(game:HttpGet("https://pastebin.com/raw/6np9cSLz"))()
 else
     game.Players.LocalPlayer:Kick("CloverHub | Unknown game.")
