@@ -31,7 +31,7 @@ local function triggerLoader()
     mainFrame.Parent = screenUi
 
     local corner = Instance.new("UICorner")
-    corner.CornerRadius = UDim.new(0.1)
+    corner.CornerRadius = UDim.new(0,14)
     corner.Parent = mainFrame
 
     local text1 = Instance.new("TextLabel")
