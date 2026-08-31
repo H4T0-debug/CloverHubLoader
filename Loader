@@ -27,7 +27,7 @@ local function triggerLoader()
     mainFrame.AnchorPoint = Vector2.new(0.5, 0.5)
     mainFrame.Size = UDim2.fromScale(0.6, 0.5)
     mainFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-    mainFrame.BackgroundTransparency = 0.3
+    mainFrame.BackgroundTransparency = 0
     mainFrame.Parent = screenUi
 
     local corner = Instance.new("UICorner")
@@ -73,7 +73,7 @@ local function triggerLoader()
     text3.Parent = mainFrame
 
     local stroke = Instance.new("UIStroke")
-    stroke.Thickness = 3
+    stroke.Thickness = 5
     stroke.Color = Color3.fromRGB(0, 0, 0)
     stroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
     stroke.Parent = mainFrame
