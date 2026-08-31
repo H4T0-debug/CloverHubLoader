@@ -20,8 +20,6 @@ local goal1 = {
 Color = Color3.fromRGB(r,g,b)
 }
 
-local colorRotate = TweenService:Create(stroke,info1,goal1)
-
 local function triggerLoader()
 local ui = player:WaitForChild("PlayerGui")
 
