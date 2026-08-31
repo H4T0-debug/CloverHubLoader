@@ -1,7 +1,76 @@
+--What the sigma? IT'S NOT MADE BY AI U DUMBASS!!
+local Players = game:GetService("Players")
+local player = Players.LocalPlayer
 local TargetPlaceId = 107778070777162
 
+--[[local function triggerLoader()
+local ui = player:WaitForChild("PlayerGui")
+
+local screenUi = Instance.new("ScreenGui")
+screenUi.Name = "Intro" --almost forgot to name it xD
+screenUi.ResetOnSpawn = false
+screenUi.Parent = ui
+
+local mainFrame = Instance.new("Frame")
+mainFrame.Name = "SigmaFrame"
+mainFrame.Position = UDim2.fromScale(0.5,0.5)
+mainFrame.AnchorPoint = Vector2.new(0.5,0.5) --Why r u still reading this? LOL
+mainFrame.Size = UDim2.fromScale(0.6,0.5)
+mainFrame.BackgroundColor3 = Color3.fromRGB(0,0,0)
+mainFrame.BackgroundTransparency = 0.3
+mainFrame.Parent = screenUi
+
+local corner = Instance.new("UICorner")
+corner.CornerRadius = UDim.new(0.2)
+corner.Parent = mainFrame
+
+local stroke = Instance.new("UIStroke")
+stroke.Thickness = 1
+stroke.Color = Color3.fromRGB(r,g,b)
+stroke.ApplyStrokeMode = Contextual
+stroke.Parent = mainFrame --my hands hurt now :(
+
+local text1 = Instance.new("TextLabel")
+text1.Text = "Clover Hub"
+text1.TextColor3 = Color3.fromRGB(255,255,255)
+text1.Font = Enum.Font.FredokaOne
+text1.Size = UDim2.fromScale(0.3,0.1)
+text1.TextXAlignment = Enum.TextXAlignment.Left
+text1.TextYAlignment = Enum.TextXAlignment.Top
+text1.TextScaled = false --this shit is trash
+text1.TextSize = 14
+text1.Parent = mainFrame --Did you know crying is not an option?
+
+local text2 = Instance.new("TextLabel")
+text2.Text = "Loader made by Mizumi on Discord"
+text2.TextColor3 = Color3.fromRGB(255,255,255)
+text2.Font = Enum.Font.FredokaOne
+text2.Size = UDim2.fromScale(0.3,0.1)
+text2.Position = UDim2.fromScale(0,0.1)
+text2.TextXAlignment = Enum.TextXAlignment.Left
+text2.TextYAlignment = Enum.TextXAlignment.Top
+text2.TextScaled = false --son of a shit
+text2.TextSize = 14
+text2.Parent = mainFrame
+
+local text3 = Instance.new("TextLabel")
+text3.Text = "Loader made by Mizumi on Discord"
+text3.TextColor3 = Color3.fromRGB(255,255,255)
+text3.Font = Enum.Font.FredokaOne
+text3.Size = UDim2.fromScale(0.3,0.1)
+text3.Position = UDim2.fromScale(0,0.2)
+text3.TextXAlignment = Enum.TextXAlignment.Left
+text3.TextYAlignment = Enum.TextXAlignment.Top
+text3.TextScaled = false --i quit
+text3.TextSize = 14
+text3.Parent = mainFrame
+end]] --ignore the animation part until iam done writing the script
+
 if game.PlaceId == TargetPlaceId then
+    --triggerLoader()
     loadstring(game:HttpGet("https://pastebin.com/raw/6np9cSLz"))()
 else
     game.Players.LocalPlayer:Kick("CloverHub | Unknown game.")
 end
+
+--Iam sorry if it doesn't works
