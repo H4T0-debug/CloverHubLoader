@@ -74,7 +74,6 @@ text3.TextYAlignment = Enum.TextXAlignment.Top
 text3.TextScaled = false --i quit
 text3.TextSize = 14
 text3.Parent = mainFrame
-end
 
 stroke = Instance.new("UIStroke")
 stroke.Thickness = 1
@@ -82,15 +81,15 @@ stroke.Color = Color3.fromRGB(r,g,b)
 stroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
 stroke.Parent = mainFrame --my hands hurt now :(
 
-local function loop() 
 task.spawn(function()
 while true do
-task.wait(1)
 r = math.random(0,255)
 g = math.random(0,255)
 b = math.random(0,255)
+goal1.Color = Color3.fromRGB(r,g,b)
 local colorRotate = TweenService:Create(stroke,info1,goal1)
 colorRotate:Play()
+task.wait(1)
 end
 end)
 end
