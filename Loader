@@ -1,9 +1,28 @@
 --What the sigma? IT'S NOT MADE BY AI U DUMBASS!!
 local Players = game:GetService("Players")
+local TweenService = game:GetService("TweenService")
 local player = Players.LocalPlayer
 local TargetPlaceId = 107778070777162
+local r = 0
+local g = 0
+local b = 0
 
---[[local function triggerLoader()
+local info1 = {
+Time = 1,
+Enum.EasimgStyle.Sine,
+Enum.EasingDirection.InOut,
+RepeatCount = -1,
+Reverses = true,
+DelayTime = 0.5
+}
+
+local goal1 {
+Color = Color3.fromRGB(r,g,b)
+}
+
+local colorRotate = TweenService:Create(stroke,info1,goal1)
+
+local function triggerLoader()
 local ui = player:WaitForChild("PlayerGui")
 
 local screenUi = Instance.new("ScreenGui")
@@ -64,10 +83,22 @@ text3.TextYAlignment = Enum.TextXAlignment.Top
 text3.TextScaled = false --i quit
 text3.TextSize = 14
 text3.Parent = mainFrame
-end]] --ignore the animation part until iam done writing the script
+
+colorRotate:Play()
+
+end
+
+task.spawn(function()
+while true do
+task.wait(1)
+r = math.random(0,255)
+g = math.random(0,255)
+b = math.random(0,255)
+end
+end)
 
 if game.PlaceId == TargetPlaceId then
-    --triggerLoader()
+    triggerLoader()
     loadstring(game:HttpGet("https://pastebin.com/raw/6np9cSLz"))()
 else
     game.Players.LocalPlayer:Kick("CloverHub | Unknown game.")
