@@ -7,12 +7,12 @@ local g = 0
 local b = 0
 
 local info1 = TweenInfo.new(
-Time = 0.5,
+0.5,
 Enum.EasingStyle.Sine,
 Enum.EasingDirection.InOut,
-RepeatCount = -1,
-Reverses = true,
-DelayTime = 0.5
+-1,
+true,
+0.5
 )
 
 local goal1 = {
@@ -39,12 +39,6 @@ mainFrame.Parent = screenUi
 local corner = Instance.new("UICorner")
 corner.CornerRadius = UDim.new(0.2)
 corner.Parent = mainFrame
-
-local stroke = Instance.new("UIStroke")
-stroke.Thickness = 1
-stroke.Color = Color3.fromRGB(r,g,b)
-stroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
-stroke.Parent = mainFrame --my hands hurt now :(
 
 local text1 = Instance.new("TextLabel")
 text1.Text = "Clover Hub"
@@ -82,6 +76,13 @@ text3.TextSize = 14
 text3.Parent = mainFrame
 end
 
+stroke = Instance.new("UIStroke")
+stroke.Thickness = 1
+stroke.Color = Color3.fromRGB(r,g,b)
+stroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
+stroke.Parent = mainFrame --my hands hurt now :(
+
+local function loop() 
 task.spawn(function()
 while true do
 task.wait(1)
@@ -92,6 +93,7 @@ local colorRotate = TweenService:Create(stroke,info1,goal1)
 colorRotate:Play()
 end
 end)
+end
 
 if game.PlaceId == TargetPlaceId then
     triggerLoader()
