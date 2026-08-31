@@ -31,7 +31,7 @@ local function triggerLoader()
     mainFrame.Parent = screenUi
 
     local corner = Instance.new("UICorner")
-    corner.CornerRadius = UDim.new(0,14)
+    corner.CornerRadius = UDim.new(0,7)
     corner.Parent = mainFrame
 
     local text1 = Instance.new("TextLabel")
@@ -73,7 +73,7 @@ local function triggerLoader()
     text3.Parent = mainFrame
 
     local stroke = Instance.new("UIStroke")
-    stroke.Thickness = 5
+    stroke.Thickness = 3
     stroke.Color = Color3.fromRGB(0, 0, 0)
     stroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
     stroke.Parent = mainFrame
@@ -92,7 +92,7 @@ end
 
 if game.PlaceId == TargetPlaceId then
     triggerLoader()
-    loadstring(game:HttpGet("https://pastebin.com/raw/6np9cSLz"))()
+    loadstring(game:HttpGet("https://pastebin.com/raw/gcX4Veu1"))()
 else
     player:Kick("CloverHub | Unknown game.")
 end
