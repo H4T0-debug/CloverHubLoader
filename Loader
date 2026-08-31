@@ -54,7 +54,7 @@ text2.TextSize = 14
 text2.Parent = mainFrame
 
 local text3 = Instance.new("TextLabel")
-text3.Text = "Loader made by Mizumi on Discord"
+text3.Text = "Clover Hub by Ryuun0x on Github"
 text3.TextColor3 = Color3.fromRGB(255,255,255)
 text3.Font = Enum.Font.FredokaOne
 text3.Size = UDim2.fromScale(0.3,0.1)
