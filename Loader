@@ -73,7 +73,7 @@ local function triggerLoader()
     text3.Parent = mainFrame
 
     local stroke = Instance.new("UIStroke")
-    stroke.Thickness = 10
+    stroke.Thickness = 5
     stroke.Color = Color3.fromRGB(0, 0, 0)
     stroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
     stroke.Parent = mainFrame
